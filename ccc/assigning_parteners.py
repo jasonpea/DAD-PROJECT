@@ -10,6 +10,6 @@ while i < n and state == "good":
     position = first.index(second[i])
     if first[i] != second[position] or position == i:
         state = "bad"
-    i = i + 1
+    i += 1
 
 print(state)
