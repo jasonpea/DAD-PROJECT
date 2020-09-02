@@ -1,11 +1,11 @@
-startpoint = list(map(int, input().split(" ")))
-endpoint = list(map(int, input().split(" ")))
+startPoint = list(map(int, input().split(" ")))
+endPoint = list(map(int, input().split(" ")))
 
 
 batteryPower = int(input())
 
 
-distance = ((startpoint[0] - endpoint[0]) + (startpoint[1] - endpoint[1]))
+distance = ((startPoint[0] - endPoint[0]) + (startPoint[1] - endPoint[1]))
 if batteryPower < distance:
     print('N')
 else:
