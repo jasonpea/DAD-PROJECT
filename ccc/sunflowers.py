@@ -1,5 +1,3 @@
-
-
 n = int(input())
 l = []
 for i in range(n):
@@ -8,23 +6,23 @@ for i in range(n):
 
 if l[0][0] > l[0][1]:
     if l[0][0] > l[1][0]:
-        rotationsNeeded = 2
+        rotationsneeded = 2
     else:
-        rotationsNeeded = 3
+        rotationsneeded = 3
 else:
     if l[0][0] < l[1][0]:
-        rotationsNeeded = 0
+        rotationsneeded = 0
     else:
-        rotationsNeeded = 1
+        rotationsneeded = 1
 
 
-for i in range(rotationsNeeded):
+for i in range(rotationsneeded):
     lTemp = []
     for j in range(n):
-        rowTemp = []
+        rowtemp = []
         for k in reversed(l):
-            rowTemp.append(k[j])
-        lTemp.append(rowTemp)
+            rowtemp.append(k[j])
+        lTemp.append(rowtemp)
     l = lTemp
 
 
